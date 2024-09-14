@@ -1,0 +1,2 @@
+{"level":"warn","ts":"2024-09-14T18:00:17.421+0800","caller":"logger/logger.go:109","msg":""}
+{"level":"warn","ts":"2024-09-14T18:00:17.422+0800","caller":"logger/logger.go:109","msg":"host=124.71.213.188 port=5432 user=postgres password= dbname=votehub sslmode=disable"}

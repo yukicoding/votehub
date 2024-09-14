@@ -1,0 +1,26 @@
+service:
+  AppMode: debug
+  HttpPort: ":4000"
+
+redis:
+  RedisDb: 
+  RedisAddr: localhost:6379
+  RedisPw: ""
+  RedisDbName: ""
+
+postgresql:
+  Db: postgresql
+  DbHost: 124.71.213.188
+  DbPort: 5432  # Changed to default PostgreSQL port
+  DbUser: postgres  # Use environment variable
+  DbPassword: postgres  # Use environment variable and corrected spelling
+  DbName: votehub
+  MaxOpenConns: 100  # Added connection pool configuration
+  MaxIdleConns: 25
+  ConnMaxLifetime: 5m
+  SSLMode: disable  # Added SSL configuration
+  TimeZone: UTC  # Added timezone configuration
+
+log:
+  LogPath: "./logs/app.log"
+  LogLevel: "debug"
